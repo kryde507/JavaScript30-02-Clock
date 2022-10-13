@@ -34,6 +34,7 @@
             flex: 1;
             min-height: 100vh;
             align-items: center;
+            justify-content: center;
         }
 
         .clock {
@@ -65,21 +66,8 @@
             background: black;
             position: absolute;
             top: 50%;
-            /* transform-origin: right;
-            transform: rotate(90deg); */
-        }
-
-        .hour-hand {
-            transform-origin: right;
-            transform: rotate(90deg);
-        }
-
-        .min-hand {
-            transform-origin: right;
-            transform: rotate(90deg);
-        }
-
-        .second-hand {
+            transition: all 0.05s;
+            transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
             transform-origin: right;
             transform: rotate(90deg);
         }
